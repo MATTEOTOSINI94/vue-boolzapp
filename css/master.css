@@ -8,7 +8,7 @@
 .box-app-container{
     
     background-color: rgb(234, 234, 233);
-    height: 500px;
+    height: 600px;
    
 }
 .all-web-app{
@@ -54,16 +54,28 @@
     position: absolute;
     left: 3px;
 }
+.search-chat{
+    margin: 5px;
+}
 
 .search-text{
     width: 100%;
+    
+}
+
+.chat-task{
+    border-top: 0.7px solid rgba(219, 210, 210, 1);
+    padding: 10px 0;
+    padding-left: 10px;
 }
 
 .msg-user-menu{
 flex-grow: 1;
 overflow: hidden;
 background-color: white
-;}
+;
+margin-right: 5px;
+}
 
 
 .box-main{
@@ -77,6 +89,27 @@ background-color: white
 }
 .text-send-msg{
     width: 100%;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 0;
+}
+.name-user-msg{
+    padding-left: 10px;
+}
+
+.icon-box-style{
+    padding: 10px;
+    font-size: 25px;
+    color: rgba(128, 128, 128, 0.829);
+}
+.input-text-style{
+    margin: 10px;
+    width: 100%;
+ 
+}
+
+.fa-circle-notch,.fa-comment-alt,.fa-ellipsis-v{
+    color:rgba(128, 128, 128, 0.829); ;
 }
 
 /* font size */
