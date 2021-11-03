@@ -91,6 +91,29 @@ margin-right: 5px;
     overflow: hidden;
     background-image: url("../img/mine.jpg");
 }
+
+.recived-msg{
+    
+    color: white;
+    text-align: right;
+}
+
+.style-msg-recived{
+    background-color: green;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+.style-msg-sent{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px
+;
+}
 .text-send-msg{
     width: 100%;
     border: 0;
@@ -115,9 +138,27 @@ margin-right: 5px;
 .fa-circle-notch,.fa-comment-alt,.fa-ellipsis-v{
     color:rgba(128, 128, 128, 0.829); ;
 }
+.message {
+    color: #000;
+    clear: both;
+    line-height: 18px;
+    font-size: 15px;
+    padding: 8px;
+    
+    margin: 8px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: -1;
+  }
 
 /* font size */
 
 h5{font-size: 1.05rem;}
 h4{font-size: 1.2rem;}
 p{font-size: 10px;}
+
+
+
+.recived-msg{
+   
+}

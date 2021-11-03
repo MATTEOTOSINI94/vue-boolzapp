@@ -45,10 +45,10 @@
                         </div>
 
                         <div class="msg-user-menu ">
-                             <div class="chat-task d-flex" v-for="elemento in contacts">
+                             <div class="chat-task d-flex" v-for="elemento,i in contacts" @click="selezionaUtente(i)">
                                  <img class="img-icon" :src="elemento.avatar" alt="">
                                  <div class="name-user-msg"><h4 class="m-0">{{elemento.name}}</h4>
-                                 <p class="m-0 text-secondary"></p></div>  
+                                 <p class="m-0 text-secondary">{{elemento.messages[0].text}}</p></div>  
                              </div>
                              <!-- <div class="chat-task d-flex">
                                 <img class="img-icon" src="img/avatar_3.jpg" alt="">
@@ -79,8 +79,11 @@
                             </div>
                         </div>
 
-                        <div class="big-box">
-
+                        <div class="big-box ">
+                            <!-- <span v-for="messaggio in contacts[currentindex].messages">{{messaggio.text[0]}}</span> -->
+                            <div class="recived-msg"><h6 class="style-msg-recived">ciao come stai</h6></div>
+                            <div class="send-msg"><h6 class="style-msg-sent">Tutto bene grazie</h6></div>
+                            
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="icon-box-style">
