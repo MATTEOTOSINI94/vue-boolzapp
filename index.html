@@ -45,12 +45,12 @@
                         </div>
 
                         <div class="msg-user-menu ">
-                             <div class="chat-task d-flex">
-                                 <img class="img-icon" src="img/avatar_2.jpg" alt="">
-                                 <div class="name-user-msg"><h4 class="m-0">Michele</h4>
-                                 <p class="m-0 text-secondary">Tutto Fatto..</p></div>  
+                             <div class="chat-task d-flex" v-for="elemento in contacts">
+                                 <img class="img-icon" :src="elemento.avatar" alt="">
+                                 <div class="name-user-msg"><h4 class="m-0">{{elemento.name}}</h4>
+                                 <p class="m-0 text-secondary">{{elemento[messages].text}}</p></div>  
                              </div>
-                             <div class="chat-task d-flex">
+                             <!-- <div class="chat-task d-flex">
                                 <img class="img-icon" src="img/avatar_3.jpg" alt="">
                                 <div class="name-user-msg"><h4 class="m-0">Fabio</h4>
                                 <p class="m-0 text-secondary">Mi piacerebbe ma devo andare a..</p></div>  
@@ -59,12 +59,9 @@
                                 <img class="img-icon" src="img/avatar_4.jpg" alt="">
                                 <div class="name-user-msg"><h4 class="m-0">Samuele</h4>
                                 <p class="m-0 text-secondary">Ah scusa..</p></div>  
-                            </div>
-                            <div class="chat-task d-flex">
-                                <img class="img-icon" src="img/avatar_5.jpg" alt="">
-                                <div class="name-user-msg"><h4 class="m-0">Luisa</h4>
-                                <p class="m-0 text-secondary">Si ma preferirei andare a..</p></div>  
-                            </div>
+                            </div> -->
+                           
+                            
                         </div>
                     </div>
                     

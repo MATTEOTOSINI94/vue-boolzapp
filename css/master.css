@@ -1,3 +1,6 @@
+html{
+    scrollbar-width: none;
+}
 .tape{
     background-color: rgb(12, 150, 135) ;
     padding: 50px 0;
@@ -8,7 +11,7 @@
 .box-app-container{
     
     background-color: rgb(234, 234, 233);
-    height: 600px;
+    height: 97vh;
    
 }
 .all-web-app{
@@ -45,7 +48,11 @@
     padding: 10px;
     border-radius: 50%;
 }
-
+.box-main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .box-icone{
     padding-right: 15px;
 }
@@ -70,18 +77,15 @@
 }
 
 .msg-user-menu{
+    height: 70%;
 flex-grow: 1;
-overflow: hidden;
-background-color: white
-;
+overflow-y: auto;
+background-color: white;
 margin-right: 5px;
 }
 
 
-.box-main{
-    display: flex;
-    flex-direction: column;
-}
+
 .big-box{
     flex-grow: 1;
     overflow: hidden;
