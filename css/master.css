@@ -1,0 +1,85 @@
+.tape{
+    background-color: rgb(12, 150, 135) ;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    
+}
+.box-app-container{
+    
+    background-color: rgb(234, 234, 233);
+    height: 500px;
+   
+}
+.all-web-app{
+    background-color: rgb(220, 220, 211);
+    height: 100vh;
+}
+
+.app-position{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.my-profile-box{
+    flex-shrink: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.img-icon{
+    width: 40px;
+    border-radius: 30px;
+}
+.box-notify{
+    flex-shrink: 0;
+    align-items: center ;
+    padding: 10px;
+    background-color: rgb(143, 218, 250);
+}
+.fa-bell-slash{
+    font-size: 30px;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.box-icone{
+    padding-right: 15px;
+}
+
+.fa-search{
+    position: absolute;
+    left: 3px;
+}
+
+.search-text{
+    width: 100%;
+}
+
+.msg-user-menu{
+flex-grow: 1;
+overflow: hidden;
+background-color: white
+;}
+
+
+.box-main{
+    display: flex;
+    flex-direction: column;
+}
+.big-box{
+    flex-grow: 1;
+    overflow: hidden;
+    background-image: url("../img/mine.jpg");
+}
+.text-send-msg{
+    width: 100%;
+}
+
+/* font size */
+
+h5{font-size: 1.05rem;}
+p{font-size: 10px;}
