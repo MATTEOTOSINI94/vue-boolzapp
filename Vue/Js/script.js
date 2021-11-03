@@ -8,8 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
                 {
                     name: 'Michele',
                     avatar: 'img/avatar_2.jpg',
-                    
-                    messages: [ {
+                    messages: [{
                         date: '10/01/2020 15:30:55',
                         text: 'Hai portato a spasso il cane?',
                         status: 'sent'
@@ -26,6 +25,9 @@ window.addEventListener("DOMContentLoaded", function () {
                     }
                     ],
                     },
+
+
+                    
                     {
                     name: 'Fabio',
                     avatar: 'img/avatar_3.jpg',
