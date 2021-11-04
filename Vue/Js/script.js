@@ -9,27 +9,32 @@ window.addEventListener("DOMContentLoaded", function () {
                 {
                     name: 'Michele',
                     avatar: 'img/avatar_2.jpg',
-                    messages: [{
-                        
+                    messages: 
+                    [
+                        {
+                
                         text: 'Hai portato a spasso il cane?',
                         status: 'sent'
-                         },
-                        {
-                        
+                        },
+
+                        {  
+                                         
                         text: 'Ricordati di dargli da mangiare',
                         status: 'recived'
+
                         },
                      
-                        ],
-                        },
+                    ],
+                },
 
 
 
-                    {
+                {
                     name: 'Fabio',
                     avatar: 'img/avatar_3.jpg',
                     messages:
-                     [  
+
+                    [  
                         {
                         text: 'Ciao come stai?',
                         status: 'sent'
@@ -40,46 +45,51 @@ window.addEventListener("DOMContentLoaded", function () {
                         status: 'received'
                         },
 
-                     ]},
-                    {
+                    ]
+                },
+
+
+                {
                     name: 'Samuele',
                     avatar: 'img/avatar_4.jpg',
                     messages: 
-                     [
+                    [
                         {
                         text: 'La Marianna va in campagna',
-                        status: 'received'
+                        status: 'sent'
                         },
                         {
                     
                         text: 'Sicuro di non aver sbagliato chat?',
-                        status: 'sent'
+                        status: 'received'
                         },
                    
-                     ]
-                    },
+                    ]
+                },
 
+                        
                 {
-                name: 'Luisa',
-                avatar: 'img/avatar_5.jpg',   
-                messages: 
-                [
-                    {
-                
-                    text: 'Lo sai che ha aperto una nuova pizzeria?',
-                    status: 'sent'
-                    },
-                    {
-                    text: 'Si, ma preferirei andare al cinema',
-                    status: 'received'
-                    }
-                ],
+                    name: 'Luisa',
+                    avatar: 'img/avatar_5.jpg',   
+                    messages: 
 
-            },
+                    [
+                        {
+                    
+                        text: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent'
+                        },
+                        {
+                        text: 'Si, ma preferirei andare al cinema',
+                        status: 'received'
+                        }
+                    ],
+
+                },
             ],
 
             newMsg:"",
-            activeChat: null,
+            activeChat:{},
             currentindex:0
             
         },
@@ -90,12 +100,31 @@ window.addEventListener("DOMContentLoaded", function () {
                 this.currentindex = index
                 console.log(index)
             },
-            
-
              
             selectChat(el){
                 this.activeChat = el;
+            },
+
+            messaggiRicevuti(text,status){
+
+               
+            },
+
+            messaggiInviati(text,status){
+                
             }
+
+
+
+            // addMessage(testoMessaggio, stato) {
+
+            //     this.activeChat.messages.push({
+
+            //       text: "",
+            //       date: "",
+            //       status: "",
+            //     });
+            //   },
         }
     })
 

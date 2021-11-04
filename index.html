@@ -84,8 +84,8 @@
 
                         <div class="big-box ">
                             <!-- <span  v-for="messaggio in contacts[currentindex].messages" >{{messaggio.text[0]}}</span> -->
-                            <div class="recived-msg"><h6 class="style-msg-recived">ciao</h6></div>
-                            <div class="send-msg"><h6 class="style-msg-sent"></h6></div>
+                            <div class="recived-msg" v-for="messaggi,i in activeChat"><h6 class="style-msg-recived">{{messaggi.messages[0].text}}</h6></div>
+                            <div class="send-msg"><h6 class="style-msg-sent">come stai</h6></div>
                            
                             
                         </div>
