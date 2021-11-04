@@ -84,6 +84,7 @@ body
     padding: 10px 0;
     padding-left: 10px;
     position: relative;
+    cursor: pointer;
 }
 
 .msg-user-menu{
@@ -126,6 +127,10 @@ margin-right: 5px;
     
     color: white;
     text-align: right;
+}
+.sent.msg{
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 .style-msg-recived{

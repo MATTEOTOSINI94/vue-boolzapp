@@ -71,7 +71,7 @@
                     <div class="col-8 p-0 box-main">
                         <div class="my-profile-box">
                             <div><img class="img-icon" src="img/avatar_1.jpg" alt=""></div>
-                            <h5 class="m-0 ps-2">Mio nome</h5>
+                            <h5 class="m-0 ps-2 " v-for="username in activeChat.name"  >{{username}}</h5>
                             <div class="ms-auto box-icone">
                                 <i class="fas fa-circle-notch ">
 
@@ -84,8 +84,8 @@
 
                         <div class="big-box ">
                             <!-- <span  v-for="messaggio in contacts[currentindex].messages" >{{messaggio.text[0]}}</span> -->
-                            <div class="recived-msg" v-for="messaggi,i in activeChat"><h6 class="style-msg-recived">{{messaggi.messages[0].text}}</h6></div>
-                            <div class="send-msg"><h6 class="style-msg-sent">come stai</h6></div>
+                            <div class=""  v-for="messaggio,i in activeChat.messages" :class="messaggio.status === `sent` ? `send-msg` : `recived-msg` "><h6 :class="messaggio.status === `sent` ? `style-msg-sent` : `style-msg-recived` ">{{messaggio.text}}</h6></div>
+                            <!-- <div class="send-msg"><h6 class="style-msg-sent">come stai</h6></div> -->
                            
                             
                         </div>
@@ -94,7 +94,7 @@
                                 <i class="far fa-smile"></i>
                             </div>
                             <div class="input-text-style">
-                                 <input v-model="newMsg" class="text-send-msg" type="text">
+                                 <input v-model="newMsg" class="text-send-msg" type="text" @keyup.enter=" senTMsg()">
                              </div>
                             <div class="icon-box-style">
                                 <i class="fas fa-microphone"></i>

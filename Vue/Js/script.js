@@ -105,6 +105,18 @@ window.addEventListener("DOMContentLoaded", function () {
                 this.activeChat = el;
             },
 
+            senTMsg(){
+                this.activeChat.messages.push({
+                    text: this.newMsg,
+                    status:'sent'
+                })
+
+                this.newMsg = "";
+            },
+
+            
+
+
             messaggiRicevuti(text,status){
 
                
