@@ -87,10 +87,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
                 },
             ],
-
+            risposte:"ok",
             newMsg:"",
             activeChat:{},
-            currentindex:0
+            
             
         },
 // devo creare una funzione che al click di un determinato elemento 
@@ -106,25 +106,44 @@ window.addEventListener("DOMContentLoaded", function () {
             },
 
             senTMsg(){
+                if (this.newMsg === ""){
+                    return
+                }
+
                 this.activeChat.messages.push({
                     text: this.newMsg,
                     status:'sent'
                 })
-
                 this.newMsg = "";
+
+
+                setTimeout(() => {
+                    // push del messaggio nell'array dei messaggi
+                    this.activeChat.messages.push({
+                        text: this.risposte,
+                        status:"received",
+                    })
+                  }, 2000);
+                },
+  
             },
 
-            
 
+            autoAnswer(){
 
-            messaggiRicevuti(text,status){
+            },
+            onSubmitClick() {
+                // push del messaggio nell'array dei messaggi
+               
+        
+            // messaggiRicevuti(text,status){
 
                
-            },
+            // },
 
-            messaggiInviati(text,status){
+            // messaggiInviati(text,status){
                 
-            }
+            // }
 
 
 
