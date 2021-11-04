@@ -79,15 +79,22 @@ window.addEventListener("DOMContentLoaded", function () {
             ],
 
             newMsg:"",
-
+            activeChat: null,
             currentindex:0
             
         },
 // devo creare una funzione che al click di un determinato elemento 
         methods: {
+            // metodo currentIndex
             selezionaUtente(index){
                 this.currentindex = index
                 console.log(index)
+            },
+            
+
+             
+            selectChat(el){
+                this.activeChat = el;
             }
         }
     })
