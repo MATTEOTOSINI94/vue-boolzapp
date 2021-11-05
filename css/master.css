@@ -70,18 +70,34 @@ body
     padding-right: 15px;
 }
 
-.fa-search{
-    position: absolute;
-    left: 3px;
-}
+
 .search-chat{
     margin: 5px;
+    position: relative;
 }
 
 .search-text{
     width: 100%;
-    
+    padding-left: 30px;
+      
 }
+
+#text-msg-tab{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 25ch;
+}
+
+.fa-search{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: rgba(128, 128, 128, 0.651);
+}
+
+
 
 .chat-task{
     border-top: 0.7px solid rgba(219, 210, 210, 1);
@@ -178,7 +194,9 @@ margin-right: 5px;
     width: 100%;
     border: 0;
     border-radius: 20px;
-    padding: 10px 0;
+    padding: 10px 10px;
+    
+
 }
 .name-user-msg{
     padding-left: 10px;
@@ -211,13 +229,7 @@ margin-right: 5px;
     z-index: -1;
 }
 
-.triangle {
-    border-color: transparent transparent red transparent;
-    border-style: solid;
-    border-width: 0px 200px 200px 200px;
-    height: 0px;
-    width: 0px;
-}
+
 
 /* font size */
 
@@ -230,9 +242,10 @@ p{font-size: 10px;}
     border: 0;
     background: transparent;
     position: absolute;
-    top: 1px;
-    right: 7px;
-    font-size: 10px;
+    top: 6px;
+    right: 3px;
+    font-size: 8px;
+    color: #666666;
 }
 
 .date-style{
@@ -248,6 +261,12 @@ p{font-size: 10px;}
 
 #text-box{
     position: relative;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 55ch;
+    
 }
 .btn-submenu{
     position: absolute;
@@ -264,6 +283,7 @@ p{font-size: 10px;}
 .btn-menu:focus .btn-submenu{
     height:auto;
     opacity: 1;
+    z-index: 1;
 }
 
 .btn-sub-menustyle{

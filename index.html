@@ -37,14 +37,16 @@
 
                         <div class="box-notify d-flex ">
                             <i class="fas fa-bell-slash"></i>
-                            <div class="ps-2"> <h5 class="m-0 pb-2">Ricevi notifiche dei messaggi</h5>
+                            <div class="ps-2" style="line-height: 4px"> <h5 class="m-0 pb-2">Ricevi notifiche dei messaggi</h5>
                             <p class="m-0 text-decoration-underline">Attiva notifiche Desktop</p></div>
                         </div>
 
                         <div class="search-chat">
                             <!-- <i class="fas fa-search"></i> -->
                             <input class="search-text" type="text" placeholder="Cerca inizia una nuova chat" v-model="filter" @keyup="FilteredList()">
-                            
+                            <i class="fas fa-search"></i>
+
+
                         </div>
 
                         <div class="msg-user-menu ">
@@ -52,7 +54,7 @@
                                  <img class="img-icon" :src="elemento.avatar" alt="">
                                  <div class="name-user-msg">
                                      <h4 class="m-0">{{elemento.name}}</h4>
-                                     <p class="m-0 text-secondary">{{lastElementList(elemento.messages).text}}</p>
+                                     <p id="text-msg-tab" class="m-0 text-secondary">{{lastElementList(elemento.messages).text}}</p>
                                      <small  class="date-box-style">{{lastElementList(elemento.messages).date}}
                                      </small>
                                 </div>  
@@ -118,10 +120,12 @@
                                 <i class="far fa-smile"></i>
                             </div>
                             <div class="input-text-style">
-                                 <input v-model="newMsg" class="text-send-msg" type="text" @keyup.enter=" senTMsg()"  >
+                                 <input v-model="newMsg" class="text-send-msg" type="text" @keyup.enter=" senTMsg()" placeholder="Scrivi un messaggio"  >
+                                 
                              </div>
                             <div class="icon-box-style">
                                 <i class="fas fa-microphone"></i>
+                                
                             </div>
                         </div>
                     

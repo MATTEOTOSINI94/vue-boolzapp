@@ -2,6 +2,7 @@ Vue.config.devtools = true;
 dayjs.extend(window.dayjs_plugin_localizedFormat);
 dayjs.extend(window.dayjs_plugin_relativeTime);
 
+
 window.addEventListener("DOMContentLoaded", function () {
     const app = new Vue ({
         el: "#root",
@@ -177,6 +178,11 @@ window.addEventListener("DOMContentLoaded", function () {
 
              
             },
+
+            scrollToEnd: function() {    	
+                var container = this.$el.querySelector("#container");
+                container.scrollTop = container.scrollHeight;
+              },
 
 
             beforeMount(){
