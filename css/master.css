@@ -242,6 +242,9 @@ p{font-size: 10px;}
     font-size: 10px;
     color: gray;
 }
+.date-top{
+    font-size: x-small;
+ padding-left: 10px;}
 
 #text-box{
     position: relative;
