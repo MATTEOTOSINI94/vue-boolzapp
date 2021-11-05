@@ -114,10 +114,10 @@ body
 
 .msg-user-menu{
     height: 70%;
-flex-grow: 1;
-overflow-y: auto;
-background-color: white;
-margin-right: 5px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: white;
+    margin-right: 5px;
 
 }
 
@@ -175,11 +175,12 @@ margin-right: 5px;
 }
 
 .style-msg-recived{
-    background-color: rgba(0, 230, 118, 1);
+    background-color: #98FB98;
     border-radius:10px;
     display: inline-block;
     margin: 10px;
     padding: 13px;
+    color: black;
 }
 .style-msg-sent{
     background-color: rgb(255, 255, 255);
@@ -261,11 +262,7 @@ p{font-size: 10px;}
 
 #text-box{
     position: relative;
-    white-space: nowrap;
-    flex-wrap: wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 55ch;
+  
     
 }
 .btn-submenu{
