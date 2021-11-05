@@ -52,8 +52,8 @@
                                  <img class="img-icon" :src="elemento.avatar" alt="">
                                  <div class="name-user-msg">
                                      <h4 class="m-0">{{elemento.name}}</h4>
-                                     <p class="m-0 text-secondary">{{lastElementList(elemento.messages)}}</p>
-                                     <small class="date-box-style">{{dayjs().format('LLL')}}
+                                     <p class="m-0 text-secondary">{{lastElementList(elemento.messages).text}}</p>
+                                     <small  class="date-box-style">{{lastElementList(elemento.messages).date}}
                                      </small>
                                 </div>  
                              </div>
@@ -78,7 +78,7 @@
                             <div><img class="img-icon" :src="activeChat.avatar" alt=""></div>
                             <div class="">
                              <h5 class="m-0 ps-2">{{activeChat.name}}</h5>
-                             <span class="date-top">{{dayjs().format('LLL')}}</span>
+                             <span class="date-top">{{lastElementList(activeChat.messages).date}}</span>
                            </div>
                             <div class="ms-auto box-icone">
                                 <i class="fas fa-circle-notch ">

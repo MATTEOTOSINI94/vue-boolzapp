@@ -123,10 +123,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
                 if (messages.length === 0) {
-                    return "";
+                    return {}
                   }
             
-                  const message = messages[messages.length - 1].text;
+                  const message = messages[messages.length - 1];
             
                   return message;
                   
@@ -175,17 +175,7 @@ window.addEventListener("DOMContentLoaded", function () {
                   },
 
 
-                  lastDate(date){
-
-                    if (messages.length === 0) {
-                    return "";
-                  }
-            
-                  const message = messages[messages.length - 1].date;
-            
-                  return message;
-
-                  }
+             
             },
 
 
