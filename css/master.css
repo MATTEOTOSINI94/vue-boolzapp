@@ -48,14 +48,18 @@ body
     align-items: center ;
     padding: 10px;
     background-color: rgb(143, 218, 250);
+    
 }
 
 
 .fa-bell-slash{
-    font-size: 30px;
+    font-size: 27px;
     background: white;
     padding: 10px;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: rgb(143, 218, 250);;
 }
 .box-main{
     display: flex;
@@ -85,6 +89,11 @@ body
     padding-left: 10px;
     position: relative;
     cursor: pointer;
+    transition: 0.8s;
+}
+
+.chat-task:focus{
+    background-color: #0000002e;
 }
 
 .msg-user-menu{
@@ -119,9 +128,25 @@ margin-right: 5px;
 
 .big-box{
     flex-grow: 1;
-    overflow: hidden;
+    overflow: auto;
     background-image: url("../img/mine.jpg");
+   
 }
+
+.big-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  .big-box::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+  }
+  .big-box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    background-color: #666666;
+  }
 
 .recived-msg{
     
@@ -134,11 +159,11 @@ margin-right: 5px;
 }
 
 .style-msg-recived{
-    background-color: green;
-    border-radius: 50px 0px 50px 50px;
+    background-color: limegreen;
+    border-radius:10px;
     display: inline-block;
     margin: 10px;
-    padding: 10px;
+    padding: 13px;
 }
 .style-msg-sent{
     background-color: rgb(255, 255, 255);
@@ -146,7 +171,7 @@ margin-right: 5px;
     border-radius: 10px;
     display: inline-block;
     margin: 10px;
-    padding: 10px
+    padding: 13px
 ;
 }
 .text-send-msg{
@@ -184,7 +209,15 @@ margin-right: 5px;
     max-width: 85%;
     word-wrap: break-word;
     z-index: -1;
-  }
+}
+
+.triangle {
+    border-color: transparent transparent red transparent;
+    border-style: solid;
+    border-width: 0px 200px 200px 200px;
+    height: 0px;
+    width: 0px;
+}
 
 /* font size */
 
@@ -192,5 +225,55 @@ h5{font-size: 1.05rem;}
 h4{font-size: 1.2rem;}
 p{font-size: 10px;}
 
+.btn-menu{
+    
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 1px;
+    right: 7px;
+    font-size: 10px;
+}
+
+.date-style{
+    position: relative;
+    left: 5px;
+    top: 10px;
+    font-size: 10px;
+    color: gray;
+}
+
+#text-box{
+    position: relative;
+}
+.btn-submenu{
+    position: absolute;
+    right: 0;
+    top: 42px;
+    background-color: rgb(0 120 0 / 0%);
+    overflow: hidden;
+    transition: opacity 1s ease;
+    opacity: 0;
+    font-size: 12px;
+    height: 0;
+}
+
+.btn-menu:focus .btn-submenu{
+    height:auto;
+    opacity: 1;
+}
+
+.btn-sub-menustyle{
+    padding-left: 0;
+    margin: 0;
+    transition: 2s;
+}
 
 
+
+.date-box-style{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 10px;
+}
