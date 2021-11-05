@@ -94,7 +94,7 @@
 
                         <div class="big-box ">
                             <!-- <span  v-for="messaggio in contacts[currentindex].messages" >{{messaggio.text[0]}}</span> -->
-                            <div class=""  v-for="messaggio,i in activeChat.messages" :class="messaggio.status === `sent` ? `send-msg` : `recived-msg` "><h6 id="text-box" :class="messaggio.status === `sent` ? `style-msg-sent` : `style-msg-recived` ">{{messaggio.text}}
+                            <div class=""  v-for="messaggio,i in activeChat.messages" :class="messaggio.status === `sent` ? `recived-msg` : `send-msg` "><h6 id="text-box" :class="messaggio.status === `sent` ? `style-msg-sent` : `style-msg-recived` ">{{messaggio.text}}
                                 
                                 <small class="date-style">{{messaggio.date}}
                                     

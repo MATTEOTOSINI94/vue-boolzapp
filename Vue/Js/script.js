@@ -179,11 +179,7 @@ window.addEventListener("DOMContentLoaded", function () {
              
             },
 
-            scrollToEnd: function() {    	
-                var container = this.$el.querySelector("#container");
-                container.scrollTop = container.scrollHeight;
-              },
-
+         
 
             beforeMount(){
                 this.activeChat = this.contacts[0]
