@@ -1,13 +1,4 @@
-body
-{
-    scrollbar-base-color: #000000;
-    scrollbar-face-color: #000000;
-    scrollbar-shadow-color: #FFFFFF;
-    scrollbar-arrow-color: #ff0000;
-    scrollbar-highlight-color: #FFFFFF;
-    
-    scrollbar-track-color: #FFFFFF;
-}
+
 .tape{
     background-color: rgb(12, 150, 135) ;
     padding: 50px 0;
@@ -47,19 +38,21 @@ body
     flex-shrink: 0;
     align-items: center ;
     padding: 10px;
-    background-color: rgb(143, 218, 250);
+    background-color:rgb(143, 218, 250); ;
     
 }
 
 
 .fa-bell-slash{
-    font-size: 27px;
+    font-size: 22px;
     background: white;
-    padding: 10px;
+    padding: 14px 12px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    color: rgb(143, 218, 250);;
+    color: rgb(143, 218, 250);
+   
+    
 }
 .box-main{
     display: flex;
@@ -87,6 +80,7 @@ body
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 25ch;
+    animation: fromRight 1s ;
 }
 
 .fa-search{
@@ -182,7 +176,8 @@ body
     padding: 13px;
     color: black;
     border-bottom-left-radius: 0;
-    animation: bounce 1s ;
+    animation: bounce 0.5s ;
+    margin-left: 20px;
 }
 .style-msg-sent{
     background-color: #ffffff;
@@ -193,6 +188,7 @@ body
     padding: 13px;
     border-bottom-right-radius: 0;
     animation: bounce 1s ;
+    margin-right: 20px;
 }
 .text-send-msg{
     width: 100%;
@@ -317,7 +313,7 @@ p{font-size: 10px;}
     position: absolute;
     content: "";
     border-right: none;
-    left: -2px;
+    left: -1px;
     border-left: 15px solid transparent;
     border-top: 12px solid #98FB98;
     bottom: -10px;
@@ -370,5 +366,14 @@ p{font-size: 10px;}
     }
   }
   
+
+  @keyframes fromRight {
+      from {
+          transform: translateX(150%);
+      }
+      to {
+        transform: translateX(0);
+    }
+  }
   /* */
   
